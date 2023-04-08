@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./img/favicon.webp" type="image/webp">
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="nav">
+            <div class="nav__headerLeft">
+                <form action="https://www.mi.com/ru" target="_blank">
+                    <button>
+                        <img src="./img/Xiaomi-logo.svg" alt="Xiaomi logo" class="headerNav__img">
+                    </button>
+                </form>
+                <div class="menu">
+                    <div class="menu__block">
+                        <img src="./img/order-1.png" alt="vacuum cleaner" class="menu__block_img">
+                        <img src="./img/order-2.png" alt="vacuum cleaner" class="menu__block_img">
+                        <img src="./img/order-3.png" alt="vacuum cleaner" class="menu__block_img">
+
+                        <div class="menu__close">
+                            <img class="menu__close_btn" src="./img/close.png" alt="close button">
+                        </div>
+                        <nav>
+                            <ul class="menu__list">
+                                <li><a href="#descr" class="menu__link">Описание</a></li>
+                                <li><a href="#char" class="menu__link">Характеристики</a></li>
+                                <li><a href="#order" class="menu__link">Оформить заказ</a></li>
+                                <li><a href="tel:88001234567" class="menu__link">8 (800) 123-45-67</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu__overlay"></div>
+                </div>
+                <button class="headerNav__menu">Menu</button>
+                <a href="#descr" class="headerNav__link">Описание</a>
+                <a href="#char" class="headerNav__link">Характеристики</a>
+                <a href="#order" class="headerNav__link">Оформить заказ</a>
+            </div>
+            <div class="nav__headerRight">
+                <a href="tel:88001234567" class="headerNav__link_phone">8 (800) 123-45-67</a>
+            </div>
+        </nav>
+
+        <div class="stockTimer hidden">
+            <div class="stockTimer__close">
+                <img class="stockTimer__close_btn" src="./img/close.png" alt="close button">
+            </div>
+            <h2 class="stockTimer__title">До конца скидки на Xiaomi <br> Mijia Mi Robot
+                Vacuum Cleaner <br> осталось</h2>
+            <div class="stockTimer__content">
+                <div class="stockTimer__item stockTimer__days">
+                    <div class="stockTimer__val">00</div>
+                    <span class="stockTimer__text">дней</span>
+                </div>
+                <div class="stockTimer__separator">:</div>
+
+                <div class="stockTimer__item stockTimer__hours">
+                    <div class="stockTimer__val">00</div>
+                    <span class="stockTimer__text">часов</span>
+                </div>
+                <div class="stockTimer__separator">:</div>
+
+                <div class="stockTimer__item stockTimer__minutes">
+                    <div class="stockTimer__val">00</div>
+                    <span class="stockTimer__text">минут</span>
+                </div>
+                <div class="stockTimer__separator">:</div>
+
+                <div class="stockTimer__item stockTimer__seconds">
+                    <div class="stockTimer__val">00</div>
+                    <span class="stockTimer__text">секунд</span>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="header__adv">
+                <div class="header__adv_left">
+                    <h1 class="header__adv_title"> Xiaomi Mijia Mi Robot<br>
+                        Vacuum Cleaner</h1>
+                    <h2 class="header__adv_subtitle"> Робот-пылесос для сухой уборки</h2>
+                    <div class="header__adv_price">
+                        <p class="header__adv_price_now">
+                            <span data-pricePrimary>32 000</span>
+                            ₽
+                        </p>
+                        <p class="header__adv_price_before">64 000 ₽</p>
+                    </div>
+                    <div class="header__adv_btnWrapper">
+                        <a href="#order" class="header__adv_btnBuy">Купить</a>
+                        <a href="#descr" class="header__adv_btnInfo">Узнать больше</a>
+                    </div>
+                    <a href="https://www.fotosklad.ru/upload/iblock/9a5/9a55a61a9ffb536d3edf7d32c203cda6.pdf"
+                        target="_blank" class="header__adv_instruction">Скачать инструкцию</a>
+                </div>
+                <div class="header__adv_right">
+                    <img src="./img/main-img.png" alt="Xiaomi Mijia Mi Robot 
+                        Vacuum Cleaner" class="header__adv_right_img animate__animated animate__fadeInRight">
+                </div>
+            </div>
+
+            <div id="descr" class="anchor_descr"></div>
+
+            <div class="header__info wow animate__animated animate__flash" data-wow-delay="1.5s">
+                <div class="header__info_item">
+                    <div class="header__info_item_data">420 мл</div>
+                    <div class="header__info_item_dataDescr">Объем пылесборника</div>
+                </div>
+                <div class="header__info_item">
+                    <div class="header__info_item_data">58 Вт</div>
+                    <div class="header__info_item_dataDescr">Мощность всасывания</div>
+                </div>
+                <div class="header__info_item">
+                    <div class="header__info_item_data">150 мин</div>
+                    <div class="header__info_item_dataDescr">Время работы от аккумулятора</div>
+                </div>
+                <div class="header__info_item">
+                    <div class="header__info_item_data">50 дБ</div>
+                    <div class="header__info_item_dataDescr">Макс. уровень шума</div>
+                </div>
+            </div>
+
+        </header>
+        <main class="infoBlock">
+            <h1 class="infoBlock__title">Новые технологии в борьбе с грязью</h1>
+            <div class="infoBlock__item">
+                <div class="infoBlock__item_left">
+                    <img src="./img/main-1.png" alt="Инновационная система навигации"
+                        class="infoBlock__item_img wow animate__animated animate__backInDown" data-wow-offset="200">
+                </div>
+                <div class="infoBlock__item_right">
+                    <h2 class="infoBlock__item_title">Инновационная система навигации</h2>
+                    <p class="infoBlock__item_text">Построение карты производится по&nbsp;двойной системе LDS
+                        сканирует
+                        помещение со&nbsp;скоростью 5&nbsp;раз в&nbsp;секунду,
+                        а&nbsp;визуальный сенсор&nbsp;HD производит съемку</p>
+                </div>
+            </div>
+            <div class="infoBlock__item">
+                <div class="infoBlock__item_left">
+                    <h2 class="infoBlock__item_title">Распознавание предметов 360°</h2>
+                    <p class="infoBlock__item_text">Благодаря 12&nbsp;датчикам робот определяет точные размеры
+                        помещения
+                        и
+                        возможные маршруты уборки. В&nbsp;новом пылесосе датчики защищены Corning Gorilla Glass.</p>
+                </div>
+                <div class="infoBlock__item_right">
+                    <img src="./img/main-2.png" alt="Распознавание предметов 360°"
+                        class="infoBlock__item_img wow animate__animated animate__backInDown" data-wow-offset="200">
+                </div>
+            </div>
+            <div class="infoBlock__item">
+                <div class="infoBlock__item_left">
+                    <img src="./img/main-3.png" alt="Сила всасывания 2000Па"
+                        class="infoBlock__item_img wow animate__animated animate__backInDown" data-wow-offset="200">
+                </div>
+                <div class="infoBlock__item_right">
+                    <h2 class="infoBlock__item_title">Сила всасывания 2000Па</h2>
+                    <p class="infoBlock__item_text">С&nbsp;лёгкостью убирает как мелкий мусор, так и&nbsp;крупный,
+                        а&nbsp;турбощётка очищает поверхности от&nbsp;шерсти,
+                        пыли и&nbsp;грязи</p>
+                </div>
+            </div>
+            <div class="infoBlock__item">
+                <div class="infoBlock__item_left">
+                    <h2 class="infoBlock__item_title">Мощный процессор</h2>
+                    <p class="infoBlock__item_text">64-разрядный чип работает на&nbsp;частоте 1,5&nbsp;ГГц
+                        и&nbsp;обеспечивает
+                        максимально быструю обработку информации, полученной
+                        с&nbsp;датчиков, быстрое составление маршрута и&nbsp;внесение
+                        в&nbsp;свою работу</p>
+                </div>
+                <div class="infoBlock__item_right">
+                    <img src="./img/main-4.png" alt="Мощный процессор"
+                        class="infoBlock__item_img wow animate__animated animate__backInDown" data-wow-offset="200">
+                </div>
+            </div>
+            <div class="infoBlock__btnWrapper">
+                <a href="https://market.yandex.ru/product--robot-pylesos-xiaomi-mi-mijia-robot-vacuum-cleaner-cn/999127687/spec?sku=101371588430&cpa=1"
+                    target="_blank" class="infoBlock__btn">Показать полностью</a>
+            </div>
+        </main>
+
+        <div id="char" class="characteristic">
+            <h1 class="characteristic__title">Характеристики</h1>
+            <div class="characteristic__wrapperBlock">
+                <div class="characteristic__leftBlock wow animate__animated animate__fadeInDown">
+                    <ul>
+                        <h3 class="characteristic__itemTitleTop">Корпус</h3>
+                        <li class="characteristic__item">
+                            <div class="characteristic__item_left">Вес товара</div>
+                            <div class="characteristic__item_right">3 800 г</div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h3 class="characteristic__itemTitleTop">Габариты и вес</h3>
+                        <li class="characteristic__item">
+                            <div class="characteristic__item_left">Ширина</div>
+                            <div class="characteristic__item_right">35 см</div>
+                        </li>
+                        <li class="characteristic__item">
+                            <div class="characteristic__item_left">Высота</div>
+                            <div class="characteristic__item_right">35 см</div>
+                        </li>
+                        <li class="characteristic__item">
+                            <div class="characteristic__item_left">Глубина</div>
+                            <div class="characteristic__item_right">96 см</div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h3 class="characteristic__itemTitleTop">Общие</h3>
+                        <li class="characteristic__item">
+                            <div class="characteristic__item_left">Гарантийный срок</div>
+                            <div class="characteristic__item_right">1 год <img class="characteristic__item_right_img_1"
+                                    src="./img/help.svg" alt="help">
+                            </div>
+                            <div class="characteristic__item_right_helpTextArea">
+                                <p class="characteristic__item_right_helpText_1">Действует с момента покупки</p>
+                            </div>
+                        </li>
+                        <li class="characteristic__item">
+                            <div class="characteristic__item_left">Бренд</div>
+                            <div class="characteristic__item_right">Xiaomi</div>
+                        </li>
+                        <li class="characteristic__item">
+                            <div class="characteristic__item_left">Страна-изготовитель</div>
+                            <div class="characteristic__item_right">Китай</div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="characteristic__righttBlock wow animate__animated animate__fadeInDown">
+                    <h3 class="characteristic__itemTitleTop">Основные</h3>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left">Тип уборки</div>
+                        <div class="characteristic__item_right">Сухая</div>
+                    </li>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left"> Объем пылесборника</div>
+                        <div class="characteristic__item_right">420 мл</div>
+                    </li>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left">Вид пылесборника</div>
+                        <div class="characteristic__item_right">Контейнер</div>
+                    </li>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left">Вид фильтра</div>
+                        <div class="characteristic__item_right">HEPA фильтр <img
+                                class="characteristic__item_right_img_2" src="./img/help.svg" alt="help">
+                        </div>
+                        <div class="characteristic__item_right_helpTextArea">
+                            <p class="characteristic__item_right_helpText_2">Это высокоэффективные фильтры, главная цель
+                                которых – удалять из воздуха мелкодисперсные частицы</p>
+                        </div>
+                    </li>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left">Мощность всасывания</div>
+                        <div class="characteristic__item_right">58 Вт</div>
+                    </li>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left">Макс. уровень шума</div>
+                        <div class="characteristic__item_right">50 дБ</div>
+                    </li>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left">Потребляемая мощность</div>
+                        <div class="characteristic__item_right">55 Вт</div>
+                    </li>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left">Сила всасывания</div>
+                        <div class="characteristic__item_right">2 000 Па</div>
+                    </li>
+                    <li class="characteristic__item">
+                        <div class="characteristic__item_left">Работа от аккумулятора</div>
+                        <div class="characteristic__item_right">Да</div>
+                    </li>
+                </div>
+            </div>
+            <div class="characteristic__btn_wrapper">
+                <a href="https://market.yandex.ru/product--robot-pylesos-xiaomi-mi-mijia-robot-vacuum-cleaner-cn/999127687/spec?sku=101371588430&cpa=1"
+                    target="_blank" class="characteristic__btn">Показать все характеристики</a>
+            </div>
+        </div>
+
+
+        <div id="order" class="order">
+            <h1 class="order__title">Оформление заказа</h1>
+            <h2 class="order__subtitle">Заполните форму ниже для оформления заказа</h2>
+            <div class="order__form">
+
+                <!-- <form action="sender.php" method="post" class="order__form_left"> -->
+                <form class="order__form_left" id="form" name="form" method="POST">
+                    <h2 class="order__form_itemTitle">Товар</h2>
+                    <p class="order__form_itemText">Количество</p>
+                    <div class="counter">
+                        <div class="counter_minus" data-action="minus">-</div>
+                        <p class="counter_num" data-counter>1</p>
+                        <div class="counter_plus" data-action="plus">+</div>
+                    </div>
+
+                    <h2 class="order__form_itemTitle">Получатель</h2>
+                    <p class="order__form_itemText">ФИО</p>
+                    <input class="order__form_input JSInputClient" id="inputNameAndSurname" name="nameAndSurname"
+                        type="text" placeholder="Представьтесь, пожалуйста" required>
+                    <p class="order__form_itemText order__form_phone">Телефон</p>
+                    <input class="order__form_input JSInputPhone" id="inputPhone" name="phone" type="tel"
+                        placeholder="+7 (___) ___-__-__" required>
+
+                    <h2 class="order__form_itemTitle">Способ получения</h2>
+                    <p class="order__form_radioText">
+                        <label data-deliv>
+                            <input class="order__form_radio" id="inputDelivery" name="delivery" type="radio"
+                                value="delivery" checked>
+                            Доставка
+                        </label>
+                    </p>
+                    <p class="order__form_radioText">
+                        <label data-notDeliv>
+                            <input class="order__form_radio" id="inputPickup" name="delivery" type="radio"
+                                value="pickup">
+                            Самовывоз
+                        </label>
+                    </p>
+
+                    <div class="order__form_hideShowBlock" data-hideShowBlock>
+                        <p class="order__form_itemText">Адрес доставки</p>
+                        <input class="order__form_input JSInputAddress" id="inputAddress" name="address" type="text"
+                            placeholder="Укажите адрес" required>
+                        <p class="order__form_itemText">Дата и время</p>
+                        <input class="order__form_input" id="inputDateAndTime" name="dateAndTime" type="datetime-local"
+                            required>
+                    </div>
+
+                    <div class="order__form_aboutNotDeliv hidden" data-hideShowAboutNotDeliv>
+                        <p class="order__form_aboutNotDeliv_text">
+                            Самовывоз осуществляется по&nbsp;адресу:<br>
+                            мутро Жулебино, Жулебинский бул., 30, корп.&nbsp;1&nbsp;<br>
+                            с 9.00 по&nbsp;18.00&nbsp;ежедневно.
+                        </p>
+                    </div>
+
+                    <p class="order__form_price">Итого:
+                        <span class="order__form_price_span">
+                            <span data-price>32</span> 000 ₽
+                        </span>
+                    </p>
+
+                    <div class="order__form_checkboxBlock">
+                        <input class="JSInput JSInputCheckbox" id="acceptanceOfDataProcessing"
+                            name="acceptanceOfDataProcessing" type="checkbox" required>
+                        <label for="acceptanceOfDataProcessing">
+                            Я&nbsp;согласен/а на&nbsp;обработку своих персональных данных
+                        </label>
+                    </div>
+
+                    <button type="submit" class="order__form_btn">Оформить заказ</button>
+                    <div id="loader" class="order__form_sendNotification hidden">Оформляем заказ...</div>
+
+                </form>
+                <div class="order__form_right">
+                    <img src="./img/order-1.png" alt="vacuum cleaner" class="order__form_right_img">
+                    <img src="./img/order-2.png" alt="vacuum cleaner" class="order__form_right_img">
+                    <img src="./img/order-3.png" alt="vacuum cleaner" class="order__form_right_img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__leftBlock">
+                <div class="footer__rightBlock_rightsReserved">© Xiaomi, 2010 - 2022. Все права защищены</div>
+                <div class="footer__rightBlock_cookie"><a class="footer__rightBlock_cookie_link" target="_blank"
+                        href="https://www.mtt.ru/media_min/filer_public/01/a8/01a8e437-f115-487f-97c6-8b9eb8ff503e/politika_v_otnoshenii_cookie-failov.pdf">Политика
+                        в
+                        отношении файлов cookie</a></div>
+            </div>
+            <div class="footer__rightBlock">
+                <a href="https://vk.com/xiaomi" target="_blank" class="footer__leftBlock_link"><img
+                        src="./img/socials-vk.svg" alt="vk link" class="footer__leftBlock_link_img"></a>
+                <a href="https://t.me/micommrussia" target="_blank" class="footer__leftBlock_link"><img
+                        src="./img/socials-telegram.svg" alt="telegram link" class="footer__leftBlock_link_img"></a>
+                <a href="#!" class="footer__leftBlock_link"><img src="./img/socials-ok.svg" alt="ok link"
+                        class="footer__leftBlock_link_img"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./libs/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+    <script src="./dadata/dadata.js"></script>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        let element = document.getElementById('inputPhone');
+        let maskOptions = {
+            mask: '+7(000)000-00-00',
+            lazy: false
+        }
+        let mask = new IMask(element, maskOptions);
+    </script>
+</body>
+
+</html>

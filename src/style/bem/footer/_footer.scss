@@ -1,0 +1,34 @@
+.footer {
+    background: #D9DAD9;
+    height: 64px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+    }
+}
+
+.footer__leftBlock {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__rightBlock {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__rightBlock_rightsReserved {
+    max-width: 352px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer__rightBlock_cookie_link {
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $textAndBtn;
+}

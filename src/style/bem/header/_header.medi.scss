@@ -1,0 +1,306 @@
+@media (max-width: 1266px) {
+    .header__adv_right_img {
+        max-width: 660px;
+    }
+
+    .header__info {
+        gap: 35px;
+    }
+
+    .header__info_item {
+        min-width: 200px;
+    }
+}
+
+// <= 1200px
+
+@media (max-width: 1166px) {
+    .header__adv_right_img {
+        max-width: 577px;
+    }
+}
+
+@media (max-width: 1071px) {
+    .header__adv_right_img {
+        max-width: 519px;
+    }
+}
+
+@media (max-width: 997px) {
+    .header__adv_right_img {
+        max-width: 350px;
+    }
+}
+
+// <= 992px
+
+@media (max-width: 990px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .headerNav__link_phone {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .header__adv {
+        min-height: 582px;
+    }
+
+    .header__adv_title {
+        font-size: 45px;
+    }
+
+    .header__adv_instruction {
+        margin-top: 74px;
+    }
+
+    .header__adv_price_now {
+        font-size: 32px;
+    }
+
+    .header__adv_btnBuy {
+        height: 47px;
+        width: 114px;
+    }
+
+    .header__adv_btnInfo {
+        height: 47px;
+        width: 181px;
+    }
+
+    .header__info_item_data {
+        font-size: 32px;
+    }
+
+    .header__info_item_dataDescr {
+        font-size: 15px;
+    }
+
+    .headerNav__link {
+        display: none;
+    }
+
+    .headerNav__menu {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .headerNav__img {
+        margin-right: 25px;
+    }
+}
+
+// <= 768px
+
+@media (max-width: 739px) {
+    .header__adv_right_img {
+        max-width: 278px;
+    }
+
+    .header__info {
+        flex-direction: column;
+        padding-left: 116px;
+    }
+}
+
+@media (max-width: 695px) {
+    .header__adv_title {
+        font-size: 41px;
+    }
+
+    .header__adv_right_img {
+        max-width: 232px;
+    }
+
+    .header__adv {
+        padding-left: 70px;
+    }
+
+    .nav {
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.945);
+        z-index: 10;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+}
+
+// <= 576px
+
+@media (max-width: 532px) {
+    .header__adv {
+        padding: 68px 0 34px 82px;
+    }
+
+    .header__adv_right_img {
+        max-width: 182px;
+    }
+
+    .headerNav__link {
+        margin-right: 25px;
+        font-size: 15px;
+    }
+
+    .header__adv_title {
+        font-size: 34px;
+    }
+
+    .header__adv_btnBuy {
+        margin-bottom: 10px;
+    }
+
+    .header__adv_title {
+        line-height: 43px;
+    }
+
+    .header__adv_price_now {
+        font-size: 27px;
+    }
+
+    .header__adv_price_before {
+        font-size: 21px;
+    }
+
+    .header__adv_instruction {
+        width: 127px;
+        margin-top: 60px;
+        font-size: 17px;
+        line-height: 16px;
+    }
+
+    .header__adv {
+        min-height: 400px;
+    }
+
+    .header__info_item_data {
+        font-size: 28px;
+    }
+}
+
+// < 576px
+
+@media (max-width: 422px) {
+
+    .headerNav__link_phone {
+        font-size: 15px;
+    }
+
+    .headerNav__menu {
+        font-size: 27px;
+    }
+
+    .header__adv_title {
+        font-size: 33px;
+    }
+
+    .header__adv_subtitle {
+        font-size: 17px;
+    }
+
+    .header__adv_price_before {
+        font-size: 21px;
+    }
+
+    .header__adv_btnBuy {
+        font-size: 17px;
+        height: 41px;
+        width: 103px;
+        margin-bottom: 0px;
+    }
+
+    .header__adv_btnInfo {
+        position: relative;
+        margin-right: 20px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .header__adv {
+        padding: 41px 8px 47px 23px;
+    }
+
+    .header__adv_price_now {
+        font-size: 29px;
+    }
+
+    .header__info_item_data {
+        font-size: 35px;
+    }
+
+    .header__info {
+        margin-top: 25px;
+    }
+
+    .header__adv_btnInfo {
+        height: 41px;
+        width: 179px;
+    }
+
+    .header__info_item_data {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 381px) {
+    .header__info {
+        padding-left: 109px;
+    }
+}
+
+@media (max-width: 366px) {
+    .nav {
+        height: 64px;
+    }
+
+    .headerNav__img {
+        height: 33px;
+    }
+
+    .headerNav__menu {
+        font-size: 24px;
+    }
+
+    .header__adv_title {
+        font-size: 24px;
+    }
+
+    .header__adv_subtitle {
+        font-size: 14px;
+    }
+
+    .header__adv_price_now {
+        font-size: 24px;
+    }
+
+    .header__adv_price_before {
+        font-size: 17px;
+    }
+
+    .header__adv_btnBuy {
+        font-size: 15px;
+        height: 37px;
+        width: 94px;
+    }
+
+    .header__adv_btnInfo {
+        height: 37px;
+        width: 143px;
+    }
+
+    .header__adv_instruction {
+        font-size: 15px;
+    }
+
+    .header__info {
+        padding-left: 50px;
+    }
+
+    .header__info_item_data {
+        font-size: 25px;
+    }
+}

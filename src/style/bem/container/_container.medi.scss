@@ -1,0 +1,23 @@
+// >= 992px
+
+@media (max-width: 990px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+// >= 768px
+
+@media (max-width: 695px) {
+    .container {
+        padding: 0 7px;
+    }
+}
+
+// < 576px
+
+@media (max-width: 422px) {
+    .container {
+        padding: 0 4px;
+    }
+}

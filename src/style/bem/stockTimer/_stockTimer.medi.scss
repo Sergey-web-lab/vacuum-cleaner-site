@@ -1,0 +1,61 @@
+@media (max-width: 860px) {
+  .stockTimer__content {
+    font-size: 50px;
+    width: 0;
+    padding: 0;
+  }
+
+  .stockTimer__separator {
+    margin: 0 10px;
+  }
+
+  .stockTimer__title {
+    font-size: 35px;
+  }
+
+  .stockTimer__close_btn {
+    width: 25px;
+  }
+}
+
+@media (max-width: 591px) {
+  .stockTimer__title {
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+  .stockTimer__val {
+    min-width: 47px;
+    font-size: 50px;
+  }
+
+  .stockTimer__separator {
+    font-size: 47px;
+  }
+
+  .stockTimer__text {
+    position: relative;
+    bottom: 34px;
+  }
+}
+
+@media (max-width: 421px) {
+  .stockTimer__title {
+    font-size: 19px;
+    line-height: 33px;
+    margin-bottom: 23px;
+  }
+
+  .stockTimer__val {
+    min-width: 27px;
+    font-size: 34px;
+  }
+
+  .stockTimer__text {
+    bottom: 46px;
+  }
+
+  .stockTimer__close_btn {
+    width: 20px;
+  }
+}
